@@ -1,0 +1,18 @@
+UML Planning Process
+
+Waterfall
+
+Analysis
+Design
+Coding
+Testing
+
+Adaptive Planning (Agile Development)
+
+Use case description
+
+2) 
+Activity diagram
+
+3) 
+class Diagram
