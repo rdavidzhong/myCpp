@@ -10,6 +10,11 @@
 
 using namespace std;
 
+void print()
+{
+    cout << "print me" << endl;
+}
+
 int main()
 {
     // Overwrite
@@ -25,6 +30,11 @@ int main()
     // Basic arithmetic
     int x = 30 % 7;
     cout << x << endl;
+    
+    // if statement
+
+    // Functions
+    print();
     
     return 0;
 }
