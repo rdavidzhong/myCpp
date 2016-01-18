@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -14,6 +15,45 @@ void print()
 {
     cout << "print me" << endl;
 }
+
+class cool
+{
+public:
+    void print()
+    {
+        cout << "good job" << endl;
+    }
+};
+
+
+// Class
+// Constructor
+
+class test
+{
+public:
+    test()
+    {
+        cout << "Constructor" << endl;
+    }
+    test(string z)
+    {
+        setName(z);
+        //cout << "Constructor" << endl;
+    }
+    void setName(string x)
+    {
+        name = x;
+    }
+    
+    string getName()
+    {
+        return name;
+    }
+private:
+    string name;
+};
+
 
 int main()
 {
@@ -35,6 +75,26 @@ int main()
 
     // Functions
     print();
+    
+    // Functions Multiple parameters
+    // Classes and objects**
+    cool myclass;
+    myclass.print();
+    
+    cout << "=======" << endl;
+    
+    // Variables in classes
+    //
+    test print; // Constructor - Print automatically
+    
+    print.setName("testing");
+    cout << print.getName() << endl;
+    
+    cout << "===Constructor====" << endl;
+    
+    // 14 - Constructor
+    test printConstructor("printConstructor\n");
+    cout << printConstructor.getName() << endl;
     
     return 0;
 }
